@@ -1,0 +1,5 @@
+This folder contains all my learnings of Shell Scripting.
+
+From Intro to Project eveything is done on basic level.
+
+It is written in such a way that anyone can easily understand the different use cases of Shell. 

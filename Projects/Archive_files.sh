@@ -1,9 +1,6 @@
 #!/bin/bash
 
-# In the Given directory find the files more than a given size and cpmpress those files and move them to a Archive folder.
-
-#$Revision:001$
-#$Tue Jul  4  2023$
+# In the Given directory find the files more than a given size and compress those files and move them to a Archive folder.
 
 #Step 1: Variables
 

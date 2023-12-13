@@ -13,7 +13,6 @@ RUN=0
 if [ ! -d $PATH ]
 then
 	echo "Directory does not exists: $PATH"
-	exit 1
 fi
 
 #Step 3: Create archive folder if not present.
@@ -25,12 +24,12 @@ fi
 
 #Step 4: Find the list of files larger than _MB, compress them and move to archive folder.
 
-for i in `find $PATH -maxdepth $DEPTH -type f -size +200M`
+for i in `find $PATH -maxdepth $DEPTH -type f -size +100k`
 do
 	if [ $RUN -eq 0 ]
 	then
-		gzip $i || exit 1
-		mv $i.gz $PATH/archive || exit 1
+		gzip $i
+		mv $i.gz $PATH/archive
 	fi
 done
 
